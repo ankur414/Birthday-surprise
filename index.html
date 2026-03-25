@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="heart-bg"></div>
+    <div id="browser-frame">
+        <section class="page active" id="p1">
+            <div class="content">
+                <h1>Happy Birthday Baby! 💖</h1>
+                <p>boyfriended so hard I had to bring out my creative side</p>
+                <button class="btn-click" onclick="showPage('p2')">Click me</button>
+            </div>
+        </section>
+        <section class="page" id="p2">
+            <h1>Click to open your presents! 🎁</h1>
+            <p>Hope you like them hehe</p>
+            <div class="gifts-container">
+                <div class="gift-box" onclick="alert('Voucher: 100 Free Hugs')">🎁</div>
+                <div class="gift-box" onclick="alert('Voucher: Your favorite dinner')">🎁</div>
+                <div class="gift-box" onclick="alert('Voucher: One movie night')">🎁</div>
+            </div>
+            <button class="btn-click" onclick="showPage('p3')">Next →</button>
+        </section>
+        <section class="page" id="p3">
+            <h1>Your Birthday Cake</h1>
+            <div class="cake-img">🎂</div>
+            <p>"You will forever be my only option."</p>
+            <button class="btn-click" onclick="showPage('p4')">Next →</button>
+        </section>
+        <section class="page" id="p4">
+            <h1>Words from my Heart</h1>
+            <div class="letter-text">
+                <p>Happiest birthday baby, you make my life so meaningful and I am so lucky to have you as my girlfriend and my wife for the rest of my life.</p>
+                <p>It has just been 6 months but I knew once I met you that you're the one for me. I have prayed to god for you just like you to be in my life. You just make every moment light up even if you are sitting there idle you bring joy to me and in my life. I love when you scold me , care for me make me learn new things and most importantly manners. The moment you're gone I start missing you, even when you sleep I am like when will she wake up I miss her. To see you happy is the happiest thing in my life. I love to see your cute beautiful smile and I promise I will be the one putting the smile on your face forever. You make me complete and I am nothing without you. I love you baby.  </p>
+            </div>
+            <button class="btn-click" onclick="showPage('p5')">One last thing...</button>
+        </section>
+        <section class="page" id="p5">
+            <h1>Song for you 🎵</h1>
+            <div class="qr-container">
+                <img src="Image (4).jpg"
+                    alt="QR Code">
+            </div>
+            <p>Scan to hear how I feel.</p>
+            <button class="btn-click" onclick="showPage('p1')">Click to restart!</button>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
